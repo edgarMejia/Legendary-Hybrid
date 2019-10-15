@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My read history</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>Today</ion-list-header>
+
+    <ion-item *ngFor="let new of newLegends">
+      <ion-avatar slot="start">
+        <ion-icon name="bookmarks"></ion-icon>
+      </ion-avatar>
+
+      <ion-label>
+        <h2>{{ new.name }}</h2>
+        <h3>{{ new.country }}</h3>
+        <p>{{ new.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>All history</ion-list-header>
+
+    <ion-item *ngFor="let recommended of recommendedLegends">
+      <ion-avatar slot="start">
+        <ion-icon name="bookmarks"></ion-icon>
+      </ion-avatar>
+
+      <ion-label>
+        <h2>{{ recommended.name }}</h2>
+        <h3>{{ recommended.country }}</h3>
+        <p>{{ recommended.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

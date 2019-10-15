@@ -1,0 +1,7 @@
+{
+  "name": "Legendary",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
